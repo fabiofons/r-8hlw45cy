@@ -24,7 +24,7 @@ class App extends Component {
     return (
       <div className="wrapper">
         <label><input type="checkbox" checked={this.state.selected} onChange={this.toggle}/> Mostrar información importante</label>
-        {this.state.selected ? p : ""}        
+        {this.state.selected ? p : null}        
       </div>
     );
   }
